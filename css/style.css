@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #616a81;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.social-menu {
+    width: 318px;
+    border-radius: 10px;
+    background-color: #ebeaeb;
+}
+
+.social-menu-link {
+    display: block;
+    border-bottom: 1px solid #969ba9;
+    padding-left: 72px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    color: #636c81;
+    position: relative;
+}
+
+.social-menu-link:after {
+    content: '';
+    position: absolute;
+    right: 32px;
+    width: 7px;
+    height: 9px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-menu-link::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+}
+
+.profile::before {
+    width: 20px;
+    height: 18px;
+    background-image: url(../images/profile.png);
+}
+
+.facebook::before {
+    width: 10px;
+    height: 18px;
+    background-image: url(../images/facebook.png);
+}
+
+.twitter::before {
+    width: 20px;
+    height: 16px;
+    background-image: url(../images/twitter.png);
+}
+
+.instagram::before {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/instagram.png);
+}
+
+.setings::before {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/setings.png);
+}
+
+.logout::before {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/logout.png);
+}
